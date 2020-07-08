@@ -1,0 +1,68 @@
+<view class="bri_index">
+<!-- 搜索框开始-->
+<searchInput></searchInput>
+<!-- 搜索框结束-->
+<!-- 轮播图开始-->
+<view class="index_swiper">
+    <swiper autoplay duration circular indicator-dots>
+        <swiper-item 
+        wx:for="{{swiperList}}"
+        wx:key="goods_id"
+        >
+            <navigator url="/pages/goods_list/index?query=海外购" >
+            <image src="{{item.image_src}}" mode="widthFix" />
+            </navigator>
+        </swiper-item>
+          
+    </swiper>
+      
+</view>
+<!-- 轮播图结束-->
+<!-- 图标开始-->
+<view class="index_cate">
+    <navigator 
+    wx:for="{{cata}}"
+    wx:key="name"
+    url="/pages/category/index"
+    open-type="switchTab"
+    >
+        <image src="{{item.image_src}}" mode="widthFix"/>
+    </navigator>
+      
+</view>
+  
+<!-- 图标结束-->
+<!-- 楼层开始-->
+<view class="index_floort"
+    wx:for="{{floortList}}"
+    wx:for-item="item"
+    wx:for-index="index"
+    wx:key="floor_title"
+>
+     <!-- 楼层标题开始-->
+        <view class="floor_title">
+            <image src="{{item.floor_title.image_src}}"  mode="widthFix"/>
+        </view>
+
+     <!-- 楼层标题结束-->
+
+     <!-- 楼层图片开始-->
+     <view class="floor_list">
+         <navigator 
+            wx:for="{{item.product_list}}"
+            wx:for-item="item1"
+            wx:for-index="index1"
+            wx:key="name"
+            url="/pages/goods_list/index?query=女装" 
+             
+            >
+        <image src="{{item1.image_src}}"  mode="{{index1===0?'widthFix':'scaleFill'}}"/>
+         </navigator>
+     </view>
+     <!-- 楼层图片结束-->
+      
+</view>
+<!-- 楼层结束-->
+
+</view>
+  

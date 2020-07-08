@@ -1,0 +1,22 @@
+<!--components/tap.wxml-->
+<view class="tap">
+<view class="tap_title">
+    <!--列表表头 -->
+    <view 
+    wx:for="{{tap}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="handleItemtap"
+    data-index="{{index}}"
+    >
+      {{item.value}} 
+    </view>
+</view>
+   
+     
+   <!--列表内同 -->
+   <view class="tap_content">
+       <slot></slot>
+   </view>
+     
+</view>

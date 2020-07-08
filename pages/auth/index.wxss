@@ -1,0 +1,14 @@
+/* pages/auth/index.wxss */
+.auth_info {
+  width: 100%;
+  height: 100%;
+  margin-top: 60rpx;
+}
+.auth_info .auth_tex {
+  font-size: 100rpx;
+  color: #872294;
+}
+.auth_info image {
+  height: 500rpx;
+  width: 500rpx;
+}

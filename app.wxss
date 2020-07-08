@@ -1,0 +1,21 @@
+/**app.wxss**/
+
+@import "./style/iconfont.wxss";
+
+/* 不支持全局变量*{} */
+page,view,text,swiper,swiper-item,image,navigator{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+page{
+    /* 设计稿是375px
+    1px=2rpx
+    14px=28rpx */
+    font-size: 28rpx;
+    --themecolor:#FF0033;
+}
+image{
+    width: 100%;
+}

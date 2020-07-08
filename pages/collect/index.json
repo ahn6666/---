@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tap":"../../components/tap/tap"
+  },
+  "navigationBarTitleText": "收藏的砖块"
+}

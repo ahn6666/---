@@ -1,0 +1,13 @@
+.order_class .order_text {
+  font-size: 50rpx;
+  color: red;
+  margin-left: 150rpx;
+  margin-top: 200rpx;
+}
+.order_class image {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}

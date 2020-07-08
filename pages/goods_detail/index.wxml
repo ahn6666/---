@@ -1,0 +1,65 @@
+<!--pages/goos_detail/index.wxml-->
+<!--商品详情-->
+<view class="detail">
+    <!--轮播图-->
+  
+
+    <swiper autoplay interval="2000" circular indicator-dots>
+       
+        <swiper-item wx:for="{{goodsObj.pics}}" wx:key="pics_id" bindtap="handlepreviewImage"
+                data-url="{{item.pics_mid}}">
+                <image mode="widthFix" src="{{item.pics_mid}}"
+               
+                />
+        </swiper-item>
+    </swiper>
+</view>
+    <view class="goods_price">￥{{goodsObj.goods_price}}</view>
+    <view class="goods_name_index">
+        <view class="goods_name">{{goodsObj.goods_name}}</view>
+        <view class="goods_coollect" bindtap="handlecollected">
+            <view class="iconfont {{isCollected?'icon-shoucang':'icon-shoucang1'}}"></view>
+            <view class="collect_name">收藏</view>
+        </view>
+    </view>
+
+<view class="goods_info">
+    <view class="info_title">
+        图文详情
+    </view>
+    <view class="info_content">
+        <rich-text class="" nodes="{{goodsObj.goods_introduce}}">
+            
+        </rich-text>
+          
+    </view>
+</view>
+
+<view class="btn_tool">
+    <view class="tool_content" >
+        <view class="iconfont icon-kefu"></view>
+        <view class="content_font">客服</view>
+        <button open-type="contact" class="btn"></button>
+    </view>
+    <view class="tool_content">
+        <view class="iconfont icon-fenxiang"></view>
+        <view class="content_font">分享</view>
+          <button open-type="share" class="btn">
+          
+          </button>
+    </view>
+    <view class="tool_content">
+        <navigator url="/pages/cart/index" open-type="switchTab">
+            <view class="iconfont icon-gou_wu_che2"></view>
+            <view class="content_font">购物车</view>
+        </navigator>  
+    </view>
+    <view class="tool_content" bindtap="handleCartAdd">
+        <view class="content_jiarugwc">加入购物车</view>
+    </view>
+    <view class="tool_content ">
+        <view class="content_buy">立即购买</view>
+    </view>
+
+
+</view>

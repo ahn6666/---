@@ -1,0 +1,8 @@
+<!--pages/auth/index.wxml-->
+<view class="auth_info">
+    <view class="auth_tex">还没有买东西哦</view>
+    <image src="https://pics.images.ac.cn/image/5f04b6a73d323.html"/>
+    
+      
+</view>
+  

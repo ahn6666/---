@@ -1,0 +1,57 @@
+<!--pages/cart/index.wxml-->
+<view class="address_row" >
+    <view class="user_info_row">
+        <view class="user_info">
+            <view class="user_name">
+                {{address.userName}}
+            </view>
+            <view class="user_detail">
+             {{address.provinceName+address.cityName+address.countyName+address.detailInfo}}
+            </view>
+        </view>
+        <view class="use_phone">
+            {{address.telNumber}}
+        </view>
+    </view>
+     
+ 
+ </view>
+
+<view class="goods_title_wrap">
+购物车
+</view>
+
+     <view class="goods_detai" wx:for="{{cart}}" wx:key="*this">
+            <!--商品图片-->
+            <navigator class="goods_img" url="/pages/goods_detail/main?goods_id={{item.goods_id}}">
+               <image mode="scaleToFill" src="{{item.goods_small_logo}}"/> 
+            </navigator>
+            <!--商品信息-->
+            <view class="goods_detail">
+                <view class="detail_goods">{{item.goods_name}}</view>
+                <view class="detail_detail_wrap">
+                    <view class="detail_price">￥: {{item.goods_price}}</view>
+                    <view class="detail_num">
+                      
+                        <view class="goods_num"> X {{item.num}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+   
+ 
+ <view class="goods_bottom">
+
+     <view class="bottom_price_all">
+         <view class="price_all_wrap">
+            合计:<view class="price_price">￥{{totlePrice}}</view>
+         </view>
+         <view class="price_text_wrap">包含运费</view>
+     </view>
+     <view class="bottom_all" >
+         确定支付({{totleNum}})
+     </view>
+ </view>
+
+

@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF0033",
+    "navigationBarTitleText": "搬砖之路",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#A9A9A9",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#F5FFFA",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/icons/shouyeshouye.png",
+        "selectedIconPath": "pages/icons/shouyeshouye-copy.png"
+       
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "商城",
+        "iconPath": "pages/icons/shouye.png",
+        "selectedIconPath": "pages/icons/shouye-copy.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "pages/icons/gouwuche.png",
+        "selectedIconPath": "pages/icons/gouwuche-copy.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "pages/icons/my.png",
+        "selectedIconPath": "pages/icons/my-copy.png"
+      }
+    ]
+  },
+  
+    
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

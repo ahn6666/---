@@ -1,0 +1,23 @@
+<tap tap="{{tap}}" bindtapItemChange="handletapItemChange">
+<view class="order_main">
+     <navigator class="goods_item"
+            wx:for="{{collected}}"
+            wx:key="goods_id"
+            url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+             >
+             <!--左侧容器-->
+                <view class="goods_img_wrap">
+                    <image src="{{item.goods_small_logo ? item.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000193373779_1_400x400.jpg'}}" mode="widthFix"/>
+                </view>
+             <!--右侧容器-->
+             <view class="goods_info_wrap">
+                 <view class="goods_name">
+                     {{item.goods_name}}
+                 </view>
+                 <view class="goods_price">
+                       ￥{{item.goods_price}}
+                 </view>
+             </view>
+            </navigator>
+</view>
+</tap> 

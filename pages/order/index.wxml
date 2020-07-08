@@ -1,0 +1,10 @@
+<!--pages/order/index.wxml-->
+<view class="order_class">
+    <view  class="order_text">
+        千万千万不要扫哦~
+    </view>
+      
+    <image class="" src="https://pics.images.ac.cn/image/5f04302d8c43f.html" />
+      
+</view>
+  

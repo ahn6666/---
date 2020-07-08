@@ -1,0 +1,83 @@
+<!--123-->
+<view class="info_detail">
+    <view class="tail_info" wx:if="{{userInfo.avatarUrl}}">
+         <image class="tail_image" src="{{userInfo.avatarUrl}}"/>
+         <view class="tail_smal">
+           <image class="smal_image" src="{{userInfo.avatarUrl}}"/>
+            <view class="smal_text">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+    <view class="tail_btn" wx:else>
+        <navigator url="/pages/login/index">登录</navigator>
+    </view>
+</view>
+
+<view class="info_main">
+<!--我的足迹-->
+    <view class="main_zuji">
+        <navigator url="/pages/collect/index">
+            <view class="zuji_num">{{collectNum}}</view>
+            <view class="zuji_name">收藏的砖厂</view>
+        </navigator>
+        <navigator url="/pages/collect/index">
+            <view class="zuji_num">{{collectNum}}</view>
+            <view class="zuji_name">收藏的砖块</view>
+        </navigator>
+        <navigator url="/pages/collect/index">
+            <view class="zuji_num">{{collectNum}}</view>
+            <view class="zuji_name">关注的砖块</view>
+        </navigator>
+        <navigator url="/pages/collect/index">
+            <view class="zuji_num">0</view>
+            <view class="zuji_name">走过的砖厂</view>          
+        </navigator>
+    </view>
+<!--我的订单-->
+
+<view class="info_order">
+        <view class="info_sp">
+            我的订单
+        </view>
+    <view class="order_content">
+        <navigator url="/pages/auth/index">
+        <view class="iconfont icon-ding_dan"></view>
+        <view class="content_text">全部砖块</view>
+        </navigator>
+        <navigator url="/pages/auth/index">
+        <view class="iconfont icon-fukuantongzhi"></view>
+        <view class="content_text">待付款</view>
+        </navigator>
+        <navigator url="/pages/auth/index">
+        <view class="iconfont icon-gou_wu_che2"></view>
+        <view class="content_text">待收货</view>
+        </navigator>
+        <navigator url="/pages/auth/index">
+        <view class="iconfont icon-tui"></view>
+        <view class="content_text">退货/退款</view>
+        </navigator>
+    </view>
+
+
+    <!--我的地址-->
+    <navigator class="address_info" url="/pages/cart/index" open-type="switchTab">
+        收砖地址管理
+    </navigator>
+    <!--应用信息相关-->
+    <view class="app_info_wrap">
+        <navigator class="app_contact" >联系辣妹
+        <button open-type="contact" > 
+        </button>
+          
+        </navigator>
+        <navigator class="app_ad" url="/pages/feedback/index">意见反馈</navigator>
+        <navigator class="app_info" url="/pages/order/index">关于我们</navigator>
+    </view>
+    <!--推荐-->
+    <view class="recommed_wrap" >
+    <button open-type="share">Button</button>
+        把应用推荐给他人
+    </view>
+
+</view>
+
+</view>

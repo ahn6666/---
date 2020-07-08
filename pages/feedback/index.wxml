@@ -1,0 +1,30 @@
+<tap tap="{{tap}}" bindtapItemChange="handletapItemChange">
+<view class="advice_wrap">
+     <view class="ad_title">问题的种类</view>
+     <view class="ad_tips">
+        <text>功能性建议</text>
+        <text>购买时遇到的问题</text>
+        <text>性能问题</text>
+        <text>其他</text>
+     </view>
+     <view class="ad_content">
+        <textarea class="con_quest"  placeholder="请描述一下您的问题" value="{{texVal}}" bindinput="handleText"></textarea>
+     <!--button无法触发
+        <view class="con_ed">
+           <button bindtap="handlecChoose">+</button>
+           <view wx:for="{{images}}" wx:key="*this">
+                <Upimg src="{{item}}"></Upimg>
+            </view>
+            </view>
+       <view >
+         -->      
+     </view>
+     
+     <view class="form_btn">
+        <button bindtap="handleForm">
+         <icon type="success_no_circle" size="23" color="" />提交
+        </button>
+     </view>
+       
+</view>
+</tap> 

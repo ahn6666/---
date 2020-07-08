@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "searchInput":"../../components/searchInput/searchInput",
+     "tap":"../../components/tap/tap"},
+  "navigationBarTitleText": "砖块列表",
+   "enablePullDownRefresh":true,
+   "backgroundTextStyle":"dark"
+}
